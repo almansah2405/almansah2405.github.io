@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dani Almansah - Portfolio</title>
+    <meta name="description" content="Professional portfolio of Dani Almansah, showcasing skills and projects" />
+    <link rel="icon" type="image/png" href="images/icons8-portfolio-50 (1).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/minified.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/solid.min.css" />
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      :root {
+        --primary: #6c63ff;
+        --dark: #2f2e41;
+        --light: #f8f9fa;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+      }
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 9999;
+      }
+      .loader {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid var(--primary);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.97);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark);
+      }
+      .logo span {
+        color: var(--primary);
+      }
+      .hero {
+        padding: 120px 0 60px;
+      }
+      .hero-content {
+        max-width: 600px;
+      }
+      .title {
+        font-size: 2.5rem;
+        margin: 15px 0;
+        line-height: 1.2;
+      }
+      .profession {
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-weight: 500;
+        transition: all 0.3s;
+      }
+      .btn-primary {
+        background: var(--primary);
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background: #5a52d5;
+        transform: translateY(-3px);
+      }
+      .profile-img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+      <div class="container">
+        <a href="#home" class="logo">Dani<span>Almansah</span></a>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h5 class="subtitle">Hello, I'm</h5>
+          <h1 class="title">Dani Almansah</h1>
+          <h2 class="profession">I'm Junior Web Developer & Designer Grapich</h2>
+          <p class="description">
+            As a Junior Web Developer and Graphic Designer, I am passionate about creating digital experiences that are beautiful, functional, and focused on users. I enjoy combining creative design with web development to make useful and attractive
+            digital products. Currently, I am seeking job opportunities to grow and contribute in a dynamic team.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="assets/Dani Almansah_KitaLulusCV.pdf" download class="btn btn-secondary">Download CV</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img src="images/fotosaya.jpg" alt="Dani Almansah" class="profile-img" />
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hero-gradient"></div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2 class="section-title">About <span>Me</span></h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="image-container">
+              <img src="images/Gambar WhatsApp 2025-06-12 pukul 22.54.50_40ef1d5c.jpg" alt="About Dani Almansah" />
+              <div class="experience-badge">
+                <span>4+</span>
+                <p>Years Experience</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <h3 class="text-center">Who am I?</h3>
+            <p class="text-center">
+              I am a Bachelor's degree graduate in Information Systems with a GPA of 3.45 from the State Islamic University of North Sumatra. I have experience in graphic design and web development. I have the ability to create attractive and
+              functional designs, as well as develop responsive and user-friendly web applications.
+            </p>
+
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="skills">Main Skills</button>
+              <button class="tab-btn" data-tab="education">Education</button>
+            </div>
+
+            <div class="tab-content active" id="skills-tab">
+              <div class="skills-list">
+                <div class="skill-item">
+                  <span>Web Development</span>
+                  <div class="progress-bar" data-percent="70%"></div>
+                </div>
+                <div class="skill-item">
+                  <span>Design Grapich</span>
+                  <div class="progress-bar" data-percent="85%"></div>
+                </div>
+                <div class="skill-item">
+                  <span>Microsoft Office</span>
+                  <div class="progress-bar" data-percent="90%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="education-tab">
+              <div class="education-list">
+                <div class="education-item">
+                  <h4>Bachelor of Information System</h4>
+                  <p>State Islamic University of North Sumatra, Sepetember 2020 - February 2025</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-buttons text-center">
+              <a href="#contact" class="btn btn-primary">Contact Me</a>
+              <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <div class="section-header center">
+          <h2 class="section-title">My <span>Skills</span></h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="skills-grid">
+          <!-- PHP -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Icon" width="40" />
+            </div>
+            <h3>PHP</h3>
+            <p>Server-side scripting and backend development</p>
+          </div>
+
+          <!-- Adobe Photoshop -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop Icon" width="40" />
+            </div>
+            <h3>Photoshop</h3>
+            <p>Photo editing</p>
+          </div>
+
+          <!-- Canva -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://img.icons8.com/color/48/000000/canva.png" alt="Canva Icon" width="40" />
+            </div>
+            <h3>Canva</h3>
+            <p>Design for social media and branding</p>
+          </div>
+
+          <!-- CorelDRAW -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://img.icons8.com/color/48/000000/coreldraw.png" alt="CorelDRAW Icon" width="40" />
+            </div>
+            <h3>CorelDRAW</h3>
+            <p>Vector illustration and print design</p>
+          </div>
+
+          <!-- Microsoft Office -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://img.icons8.com/color/48/000000/microsoft-office-2019.png" alt="Microsoft Office Icon" width="40" />
+            </div>
+            <h3>Microsoft Office</h3>
+            <p>Word, Excel, PowerPoint for productivity</p>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap Icon" width="40" />
+            </div>
+            <h3>Bootstrap</h3>
+            <p>Responsive web design framework</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2 class="section-title">My <span>Portfolio</span></h2>
+          <p class="section-subtitle">Featured Projects</p>
+        </div>
+        <div class="portfolio-grid">
+          <!-- Project 1 -->
+          <div
+            class="portfolio-item"
+            data-title="Sistem Informasi Manajemen Masjid"
+            data-image="images/Screenshot (14).png"
+            data-desc="Pembuatan website Sistem Informasi Manajemen Masjid Pada Masjid Al-Falah untuk mengatur keuangan masjid, menggunakan bahasa pemrograman PHP dan Bootstrap.">
+            <img src="images/Screenshot (14).png" alt="Project 1" />
+            <div class="overlay">
+              <button class="btn btn-secondary view-btn">View Project</button>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="portfolio-item" data-title="Book Cover Design" data-image="images/Screenshot (250).png" data-desc="Pembuatan cover buku untuk perusahaan Edi Makmur menggunakan aplikasi CorelDraw X7.">
+            <img src="images/Screenshot (250).png" alt="Project 2" />
+            <div class="overlay">
+              <button class="btn btn-secondary view-btn">View Project</button>
+            </div>
+          </div>
+          <!-- Tambahkan item lain sesuai kebutuhan -->
+        </div>
+      </div>
+
+      <!-- Modal Lightbox -->
+      <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3 class="modal-title"></h3>
+          <img class="modal-image" src="" alt="" />
+          <p class="modal-desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-light">
+      <div class="container">
+        <div class="section-header center">
+          <h2 class="section-title">Work <span>Experience</span></h2>
+          <p class="section-subtitle">My professional journey</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2025</div>
+            <div class="timeline-content">
+              <h4>CV. Mitra Utama Printing/Swara Foto Studio</h4>
+              <p>
+                <em><strong>Posisi: Oprasional Komputer</strong></em>
+              </p>
+              <p>
+                Bertanggung jawab dalam pengolahan dokumen menggunakan Microsoft Office serta mendukung proses desain grafis untuk kebutuhan cetak. Terlibat dalam pembuatan layout, pengeditan desain, dan memastikan hasil akhir sesuai dengan kebutuhan
+                klien.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">October 2023</div>
+            <div class="timeline-content">
+              <h4>Kementerian Pekerjaan Umum dan Perumahan Rakyat</h4>
+              <p>
+                <em><strong>Posisi: Staff Karyawan</strong></em>
+              </p>
+              <p>Bekerja sebagai staff laporan keuangan dan pembuatan surat perjalanan dinas menggunakan Microsoft Word dan Excel.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Futured</div>
+            <div class="timeline-content">
+              <h4>Futured</h4>
+              <p>
+                <em><strong>-</strong></em>
+              </p>
+              <p>-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2 class="section-title">Contact <span>Me</span></h2>
+          <p class="section-subtitle">Get in touch</p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Let's talk about your project</h3>
+            <p>I'm available for freelance work and full-time positions. Feel free to contact me.</p>
+
+            <div class="info-item clickable" onclick="window.location.href='mailto:dani.almansah@gmail.com'">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <p>dani.almansah@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-item clickable" onclick="window.location.href='tel:+6282360143561'">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h4>Phone</h4>
+                <p>+62 823-6014-3561</p>
+              </div>
+            </div>
+
+            <div class="info-item clickable" onclick="window.open('https://maps.google.com?q=Medan,Sumatera+Utara,Indonesia','_blank')">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>Medan, Sumatera Utara, Indonesia</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h3>Dani Almansah</h3>
+            <div class="social-links">
+              <a href="https://linkedin.com/in/danialmansah" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/almansah2405" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://wa.me/6282360143561" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://instagram.com/daniialmnsh_" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe for updates and insights</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; <span id="year"></span> Dani Almansah. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+    <script src="js/minified.js" defer></script>
+    <script>
+      document.querySelectorAll(".view-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.closest(".portfolio-item");
+          const title = item.dataset.title;
+          const image = item.dataset.image;
+          const desc = item.dataset.desc;
+
+          const modal = document.getElementById("portfolioModal");
+          modal.querySelector(".modal-title").textContent = title;
+          modal.querySelector(".modal-image").src = image;
+          modal.querySelector(".modal-image").alt = title;
+          modal.querySelector(".modal-desc").textContent = desc;
+
+          modal.style.display = "flex";
+        });
+      });
+
+      // Close modal
+      document.querySelector("#portfolioModal .close").addEventListener("click", () => {
+        document.getElementById("portfolioModal").style.display = "none";
+      });
+
+      // Close when clicking outside content
+      window.addEventListener("click", (e) => {
+        const modal = document.getElementById("portfolioModal");
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
