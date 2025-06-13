@@ -647,7 +647,7 @@ nav .container {
 
 /* Center the progress bars under their labels */
 .skill-item span {
-  text-align: center;
+  text-align: left;
   display: block;
 }
 
