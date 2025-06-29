@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dani Almansah - Portfolio</title>
     <meta name="description" content="Professional portfolio of Dani Almansah, showcasing skills and projects" />
-    <link rel="icon" type="image/png" href="images/icons8-portfolio-50 (1).png" />
+    <link rel="icon" type="image/jpg" href="images/icon1.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/minified.css" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/solid.min.css" />
@@ -123,14 +122,11 @@
       <div class="loader"></div>
     </div>
     <!-- Navigation -->
-    <nav id="navbar" class="glass-nav">
+    <nav id="navbar">
       <div class="container">
-        <a href="#home" class="logo">Dani<span>Almansah</span></a>
-        <div class="nav-toggle" id="navToggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <a href="#home" class="logo">Dani<span> Almansah</span></a>
+        
+        <!-- Menu untuk Desktop -->
         <ul class="nav-links">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -139,6 +135,11 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <!-- Tombol Hamburger untuk Mobile -->
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </nav>
 
@@ -169,8 +170,7 @@
     </section>
     <div class="hero-gradient"></div>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <div class="container">
         <div class="section-header center">
           <h2 class="section-title">About <span>Me</span></h2>
@@ -179,66 +179,77 @@
         <div class="about-content">
           <div class="about-image">
             <div class="image-container">
-              <img src="images/Gambar WhatsApp 2025-06-12 pukul 22.54.50_40ef1d5c.jpg" alt="About Dani Almansah" />
+              <img src="images/exp.jpg" alt="Dani Almansah" />
               <div class="experience-badge">
                 <span>3+</span>
-                <p>Years Experience</p>
+                <p>Years Exp.</p>
               </div>
             </div>
           </div>
           <div class="about-text">
-            <h3 class="text-center">Who am I?</h3>
-            <p class="text-center">
-              I am a Bachelor's degree graduate in Information Systems with a GPA of 3.41 from the State Islamic University of North Sumatra. I have experience in graphic design and web development. I have the ability to create attractive and
-              functional designs, as well as develop responsive and user-friendly web applications.
+            <p>
+              I am a Bachelor's degree graduate in Information Systems with a GPA of 3.41 from the State Islamic University of North Sumatra. I have experience in graphic design and web development, with the ability to create attractive and functional
+              designs and develop responsive, user-friendly web applications.
             </p>
 
-            <div class="tabs">
-              <button class="tab-btn active" data-tab="skills">Main Skills</button>
-              <button class="tab-btn" data-tab="education">Education</button>
-              <button class="tab-btn bhs" data-tab="language">Language Skills</button>
-            </div>
+            <!-- Container untuk Tabs & Kontennya -->
+            <div class="tabs-container">
+              <!-- Tombol Tabs -->
+              <div class="tabs">
+                <button class="tab-btn active" data-tab="skills">Main Skills</button>
+                <button class="tab-btn" data-tab="education">Education</button>
+                <button class="tab-btn" data-tab="language">Language</button>
+              </div>
 
-            <div class="tab-content active" id="skills-tab">
-              <div class="skills-list">
-                <div class="skill-item">
-                  <span>Web Development</span>
-                  <div class="progress-bar" data-percent="60%"></div>
+              <!-- Wrapper untuk Konten Tabs -->
+              <div class="tab-content-wrapper">
+                <!-- Konten Skills -->
+                <div class="tab-content active" id="skills-tab">
+                  <div class="skills-list">
+                    <div class="skill-item" data-percent="60%">
+                      <span>Web Development</span>
+                      <div class="progress-bar"><div class="progress-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-percent="85%">
+                      <span>Graphic Design</span>
+                      <div class="progress-bar"><div class="progress-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-percent="90%">
+                      <span>Microsoft Office</span>
+                      <div class="progress-bar"><div class="progress-fill"></div></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="skill-item">
-                  <span>Design Grapich</span>
-                  <div class="progress-bar" data-percent="85%"></div>
+
+                <!-- Konten Education -->
+                <div class="tab-content" id="education-tab">
+                  <div class="education-list">
+                    <div class="education-item">
+                      <h4>Bachelor of Information System</h4>
+                      <p>State Islamic University of North Sumatra, Sep 2020 - Feb 2025</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="skill-item">
-                  <span>Microsoft Office</span>
-                  <div class="progress-bar" data-percent="90%"></div>
+
+                <!-- Konten Language -->
+                <div class="tab-content" id="language-tab">
+                  <div class="language-list">
+                    <div class="language-item" data-percent="100%">
+                      <span>Indonesian</span>
+                      <div class="progress-bar"><div class="progress-fill"></div></div>
+                    </div>
+                    <div class="language-item" data-percent="70%">
+                      <span>English</span>
+                      <div class="progress-bar"><div class="progress-fill"></div></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- AKHIR Container Tabs -->
 
-            <div class="tab-content" id="education-tab">
-              <div class="education-list">
-                <div class="education-item">
-                  <h4>Bachelor of Information System</h4>
-                  <p>State Islamic University of North Sumatra, September 2020 - February 2025</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab-content bhs" id="language-tab">
-              <div class="language-list">
-                <div class="language-item">
-                  <span>Indonesian</span>
-                  <div class="progress-bar" data-percent="100%"></div>
-                </div>
-                <div class="language-item">
-                  <span>English</span>
-                  <div class="progress-bar" data-percent="70%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="cta-buttons text-center">
+            <!-- Tombol CTA dipindahkan ke sini -->
+            <div class="cta-buttons">
               <a href="#contact" class="btn btn-primary">Contact Me</a>
               <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
             </div>
@@ -248,7 +259,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section bg-light">
+    <section id="skills" class="section bg-light reveal">
       <div class="container">
         <div class="section-header center">
           <h2 class="section-title">My <span>Skills</span></h2>
@@ -313,7 +324,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="section">
+    <section id="portfolio" class="section reveal">
       <div class="container">
         <div class="section-header center">
           <h2 class="section-title">My <span>Portfolio</span></h2>
@@ -338,7 +349,13 @@
               <button class="btn btn-secondary view-btn">View Project</button>
             </div>
           </div>
-          <!-- Tambahkan item lain sesuai kebutuhan -->
+          <!-- Project 3 -->
+          <div class="portfolio-item" data-title="Brochure Design" data-image="images/canva.png" data-desc="Pembuatan desain brosur untuk lowongan kerja untuk PT Solid Indo Grub.">
+            <img src="images/canva.png" alt="Project 3" />
+            <div class="overlay">
+              <button class="btn btn-secondary view-btn">View Project</button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -354,7 +371,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section bg-light">
+    <section id="experience" class="section bg-light reveal">
       <div class="container">
         <div class="section-header center">
           <h2 class="section-title">Work <span>Experience</span></h2>
@@ -414,8 +431,62 @@
       </div>
     </section>
 
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section bg-light reveal">
+      <div class="container">
+        <div class="section-header center">
+          <h2 class="section-title">My <span>Gallerys</span></h2>
+          <p class="section-subtitle">A glimpse into my interests outside of work</p>
+        </div>
+        <div class="hobbies-grid">
+          <div class="hobby-card">
+            <img src="images/s.jpg" alt="touring hobby" />
+            <div class="hobby-overlay">
+              <h3>Touring</h3>
+            </div>
+          </div>
+
+          <div class="hobby-card">
+            <img src="images/c.jpg" alt="Camping hobby" />
+            <div class="hobby-overlay">
+              <h3>Camping</h3>
+            </div>
+          </div>
+
+           <div class="hobby-card">
+            <img src="images/siu.jpg" alt="Touring Hobby" />
+            <div class="hobby-overlay">
+              <h3>Touring</h3>
+            </div>
+          </div>
+         
+          <div class="hobby-card">
+            <img src="images/km0.jpg" alt="Touring Hobby" />
+            <div class="hobby-overlay">
+              <h3>Touring</h3>
+            </div>
+          </div>
+
+          <div class="hobby-card">
+            <img src="images/Gambar WhatsApp 2025-06-12 pukul 22.54.50_40ef1d5c.jpg" alt="Touring Hobby" />
+            <div class="hobby-overlay">
+              <h3>Touring</h3>
+            </div>
+          </div>
+
+          <div class="hobby-card">
+            <img src="images/p.jpg" alt="Touring Hobby" />
+            <div class="hobby-overlay">
+              <h3>Touring</h3>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section reveal">
       <div class="container">
         <div class="section-header center">
           <h2 class="section-title">Contact <span>Me</span></h2>
@@ -530,7 +601,6 @@
 
     <!-- JavaScript -->
     <script src="js/script.js" defer></script>
-    <script src="js/minified.js" defer></script>
     <script>
       document.querySelectorAll(".view-btn").forEach((btn) => {
         btn.addEventListener("click", () => {
