@@ -152,9 +152,9 @@
           <h1 class="title">Dani Almansah</h1>
           <h2 class="profession">Sebagai Junior Web Developer & Designer Grapich</h2>
           <p class="description">
-            Saya bersemangat menciptakan pengalaman digital yang indah, fungsional, dan berfokus pada pengguna.
-            Saya senang menggabungkan desain kreatif dengan pengembangan web untuk menciptakan produk digital yang bermanfaat dan menarik. 
-            Saat ini, saya mencari peluang untuk berkembang dan berkontribusi dalam tim yang dinamis.
+            Pengembang Web Junior dan Desainer Grafis, saya bersemangat menciptakan pengalaman digital yang indah, fungsional, dan berfokus pada pengguna.
+            Saya senang menggabungkan desain kreatif dengan pengembangan web untuk menciptakan produk digital yang bermanfaat dan menarik.
+            Saat ini, saya sedang mencari peluang kerja untuk berkembang dan berkontribusi dalam tim yang dinamis.
           </p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">Hire Me</a>
@@ -176,7 +176,7 @@
       <div class="container">
         <div class="section-header center">
           <h2 class="section-title">Tentang <span>Saya</span></h2>
-          <p class="section-subtitle">Kenali aku lebih baik</p>
+          <p class="section-subtitle">Get to know me better</p>
         </div>
         <div class="about-content">
           <div class="about-image">
@@ -190,7 +190,7 @@
           </div>
           <div class="about-text">
             <p>
-             Saya lulusan Sarjana Sistem Informasi dengan IPK 3,41 dari Universitas Islam Negeri Sumatera Utara. 
+             Saya lulusan Sarjana Sistem Informasi dengan IPK 3,41 dari Universitas Islam Negeri Sumatera Utara.
              Saya berpengalaman dalam desain grafis dan pengembangan web, dengan kemampuan menciptakan desain yang menarik dan fungsional serta mengembangkan aplikasi web yang responsif dan ramah pengguna.
             </p>
 
@@ -198,9 +198,9 @@
             <div class="tabs-container">
               <!-- Tombol Tabs -->
               <div class="tabs">
-                <button class="tab-btn active" data-tab="skills">Skill Utama</button>
-                <button class="tab-btn" data-tab="education">Pendidikan</button>
-                <button class="tab-btn" data-tab="language">Penguasaan Bahasa</button>
+                <button class="tab-btn active" data-tab="skills">Main Skills</button>
+                <button class="tab-btn" data-tab="education">Education</button>
+                <button class="tab-btn" data-tab="language">Language</button>
               </div>
 
               <!-- Wrapper untuk Konten Tabs -->
@@ -227,8 +227,8 @@
                 <div class="tab-content" id="education-tab">
                   <div class="education-list">
                     <div class="education-item">
-                      <h4>Lulusan Sistem Informasi</h4>
-                      <p>Universitas Islam Negeri Sumatera Utara, Sep 2020 - Feb 2025</p>
+                      <h4>Bachelor of Information System</h4>
+                      <p>State Islamic University of North Sumatra, Sep 2020 - Feb 2025</p>
                     </div>
                   </div>
                 </div>
@@ -237,11 +237,11 @@
                 <div class="tab-content" id="language-tab">
                   <div class="language-list">
                     <div class="language-item" data-percent="100%">
-                      <span>Indonesia</span>
+                      <span>Indonesian</span>
                       <div class="progress-bar"><div class="progress-fill"></div></div>
                     </div>
                     <div class="language-item" data-percent="70%">
-                      <span>Inggris</span>
+                      <span>English</span>
                       <div class="progress-bar"><div class="progress-fill"></div></div>
                     </div>
                   </div>
@@ -252,8 +252,8 @@
 
             <!-- Tombol CTA dipindahkan ke sini -->
             <div class="cta-buttons">
-              <a href="#contact" class="btn btn-primary">Kontak Saya</a>
-              <a href="#portfolio" class="btn btn-outline">Lihat Portfolio</a>
+              <a href="#contact" class="btn btn-primary">Contact Me</a>
+              <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
             </div>
           </div>
         </div>
@@ -264,8 +264,8 @@
     <section id="skills" class="section bg-light reveal">
       <div class="container">
         <div class="section-header center">
-          <h2 class="section-title">Skill <span>Saya</span></h2>
-          <p class="section-subtitle">Teknologi yang Saya Pakai</p>
+          <h2 class="section-title">My <span>Skills</span></h2>
+          <p class="section-subtitle">Technologies I work with</p>
         </div>
         <div class="skills-grid">
           <!-- PHP -->
@@ -329,8 +329,8 @@
     <section id="portfolio" class="section reveal">
       <div class="container">
         <div class="section-header center">
-          <h2 class="section-title">Portfolio <span>Saya</span></h2>
-          <p class="section-subtitle">Beberapa Projek Saya</p>
+          <h2 class="section-title">My <span>Portfolio</span></h2>
+          <p class="section-subtitle">Featured Projects</p>
         </div>
         <div class="portfolio-grid">
           <!-- Project 1 -->
@@ -341,21 +341,21 @@
             data-desc="Pembuatan website Sistem Informasi Manajemen Masjid Pada Masjid Al-Falah untuk mengatur keuangan masjid, menggunakan bahasa pemrograman PHP dan Bootstrap.">
             <img src="images/Screenshot (14).png" alt="Project 1" />
             <div class="overlay">
-              <button class="btn btn-secondary view-btn">Lihat Projek</button>
+              <button class="btn btn-secondary view-btn">View Project</button>
             </div>
           </div>
           <!-- Project 2 -->
           <div class="portfolio-item" data-title="Book Cover Design" data-image="images/Screenshot (250).png" data-desc="Pembuatan cover buku untuk perusahaan Edi Makmur menggunakan aplikasi CorelDraw X7.">
             <img src="images/Screenshot (250).png" alt="Project 2" />
             <div class="overlay">
-              <button class="btn btn-secondary view-btn">Lihat Projek</button>
+              <button class="btn btn-secondary view-btn">View Project</button>
             </div>
           </div>
           <!-- Project 3 -->
           <div class="portfolio-item" data-title="Brochure Design" data-image="images/canva.png" data-desc="Pembuatan desain brosur untuk lowongan kerja untuk PT Solid Indo Grub.">
             <img src="images/canva.png" alt="Project 3" />
             <div class="overlay">
-              <button class="btn btn-secondary view-btn">Lihat Projek</button>
+              <button class="btn btn-secondary view-btn">View Project</button>
             </div>
           </div>
 
@@ -363,7 +363,7 @@
           <div class="portfolio-item" data-title="Brochure Design" data-image="images/Gambar WhatsApp 2025-07-25 pukul 22.55.32_7b5b796b.jpg" data-desc="Pembuatan desain spanduk pada TK Hanayovalin, menggunakan aplikasi dan tools CorelDraw.">
             <img src="images/Gambar WhatsApp 2025-07-25 pukul 22.55.32_7b5b796b.jpg" alt="Project 4" />
             <div class="overlay">
-              <button class="btn btn-secondary view-btn">Lihat Projek</button>
+              <button class="btn btn-secondary view-btn">View Project</button>
             </div>
           </div>
         </div>
@@ -384,8 +384,8 @@
     <section id="experience" class="section bg-light reveal">
       <div class="container">
         <div class="section-header center">
-          <h2 class="section-title">Pengalaman <span>Kerja</span></h2>
-          <p class="section-subtitle">Perjalanan Profesional Saya</p>
+          <h2 class="section-title">Work <span>Experience</span></h2>
+          <p class="section-subtitle">My professional journey</p>
         </div>
         <div class="timeline">
           <div class="timeline-item">
@@ -445,8 +445,8 @@
     <section id="hobbies" class="section bg-light reveal">
       <div class="container">
         <div class="section-header center">
-          <h2 class="section-title">Galeri <span>Saya</span></h2>
-          <p class="section-subtitle">Kebiasaan yang Saya Lakukan di Luar Pekerjaan Saya</p>
+          <h2 class="section-title">My <span>Gallerys</span></h2>
+          <p class="section-subtitle">A glimpse into my interests outside of work</p>
         </div>
         <div class="hobbies-grid">
           <div class="hobby-card">
@@ -469,7 +469,7 @@
               <h3>Touring</h3>
             </div>
           </div>
-         
+
           <div class="hobby-card">
             <img src="images/km0.jpg" alt="Touring Hobby" />
             <div class="hobby-overlay">
@@ -490,7 +490,7 @@
               <h3>Touring</h3>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -499,13 +499,13 @@
     <section id="contact" class="section reveal">
       <div class="container">
         <div class="section-header center">
-          <h2 class="section-title">Kontak <span>Saya</span></h2>
-          <p class="section-subtitle">Silahkan Klik</p>
+          <h2 class="section-title">Contact <span>Me</span></h2>
+          <p class="section-subtitle">Get in touch</p>
         </div>
         <div class="contact-container">
           <div class="contact-info">
-            <h3>Mari bicarakan proyek Anda</h3>
-            <p>Jangan ragu untuk menghubungi saya.</p>
+            <h3>Let's talk about your project</h3>
+            <p>I'm available for freelance work and full-time positions. Feel free to contact me.</p>
 
             <div class="info-item clickable" onclick="window.location.href='mailto:dani.almansah@gmail.com'">
               <div class="info-icon">
@@ -551,7 +551,7 @@
             <div class="form-group">
               <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Kirim</button>
+            <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
         </div>
       </div>
@@ -579,7 +579,7 @@
             </div>
           </div>
           <div class="footer-links">
-            <h3>Tautan Cepat</h3>
+            <h3>Quick Links</h3>
             <ul>
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -589,8 +589,8 @@
             </ul>
           </div>
           <div class="footer-newsletter">
-            <h3>Buletin</h3>
-            <p>Kirim untuk mendapatkan pembaruan dan wawasan </p>
+            <h3>Newsletter</h3>
+            <p>Subscribe for updates and insights</p>
             <form class="newsletter-form">
               <input type="email" placeholder="Your Email" />
               <button type="submit"><i class="fas fa-paper-plane"></i></button>
@@ -600,7 +600,7 @@
       </div>
       <div class="footer-bottom">
         <div class="container">
-          <p>&copy; <span id="year"></span> Copyright by | Dani Almansah</p>
+          <p>&copy; <span id="year"></span> Dani Almansah. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -643,5 +643,6 @@
         }
       });
     </script>
+
   </body>
 </html>
