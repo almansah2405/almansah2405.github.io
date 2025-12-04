@@ -1,0 +1,816 @@
+:root {
+  --primary-color: #c9a96e;
+  --secondary-color: #8b7355;
+  --accent-color: #f5e8d0;
+  --dark-color: #3e3e3e;
+  --light-color: #f9f7f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.invitation-content {
+  display: block;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark-color);
+  overflow-x: auto;
+  background-color: var(--light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+  color: var(--secondary-color);
+}
+
+/* 1. Font untuk Brand Name (Doma & Harper) - Tetap menggunakan Dancing Script */
+#mainNavbar .brand-text {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 1.8rem;
+  /* Stroke dan warna putih tetap */
+  color: white !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* 2. Font untuk Navigasi Links (TEGAK BERSAMBUNG) */
+#mainNavbar .nav-link {
+  font-family: "Dancing Script", cursive; /* Diubah ke Dancing Script */
+  font-weight: 500; /* Medium, agar tidak terlalu tipis */
+  font-size: 1.15rem; /* Ukuran sedikit lebih besar agar terbaca */
+  letter-spacing: 1px; /* Tambahkan sedikit jarak agar tidak terlalu rapat */
+  /* Stroke dan warna putih tetap */
+  color: white !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  transition: color 0.3s ease; /* Transisi untuk hover */
+}
+
+/* 3. Style Teks pada Tombol ON/OFF */
+#mainNavbar .btn-audio,
+#mainNavbar .btn-audio span {
+  font-family: "Montserrat", sans-serif; /* Pilihan font bersih (atau Anda bisa ganti ke Dancing Script jika mau) */
+  font-weight: 500;
+  font-size: 1rem;
+  color: white !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* 4. Style Navbar Link (Hover) */
+#mainNavbar .nav-link:hover,
+#mainNavbar .navbar-brand:hover {
+  color: #ffd700 !important; /* Warna hover emas/kuning */
+}
+
+/* Hero Section dengan Pintu Gerbang */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  background-color: rgba(201, 169, 110, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 100px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+  color: white;
+}
+
+.countdown-label {
+  font-size: 1rem;
+  color: white;
+}
+
+.invitation-content {
+  display: none;
+  padding-top: 80px;
+}
+
+/* Section Styles */
+.section {
+  padding: 5rem 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 10px auto 0;
+}
+
+/* Section 1: Ayat Quran */
+.quran-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1934&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.quran-text {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.arabic-text {
+  font-size: 2.5rem;
+  direction: rtl;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+/* Section 2: Pasangan Pengantin */
+/* Section 2: Pasangan Pengantin - PERBAIKAN */
+.couple-section {
+  background: linear-gradient(rgba(249, 247, 242, 0.9), rgba(249, 247, 242, 0.9)), url("https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container untuk foto utama */
+.couple-main-photo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.couple-main-photo {
+  width: 100%;
+  max-width: 600px; /* Batas maksimum ukuran foto */
+  height: auto; /* Tinggi menyesuaikan */
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border: 12px solid white;
+  transition: transform 0.3s ease;
+}
+
+.couple-main-photo:hover {
+  transform: scale(1.02);
+}
+
+.couple-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.couple-info {
+  text-align: center;
+  max-width: 400px;
+  padding: 0 15px;
+}
+
+.couple-name {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-family: "Dancing Script", cursive;
+  color: var(--secondary-color);
+  line-height: 1.2;
+}
+
+.couple-parents {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.couple-quote {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dark-color);
+  font-style: italic;
+  padding: 0 10px;
+}
+
+/* Responsive styles untuk couple section */
+@media (max-width: 992px) {
+  .couple-main-photo {
+    max-width: 500px;
+    border: 10px solid white;
+  }
+
+  .couple-name {
+    font-size: 2rem;
+  }
+
+  .couple-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .couple-main-photo {
+    max-width: 400px;
+    border: 8px solid white;
+  }
+
+  .couple-name {
+    font-size: 1.8rem;
+  }
+
+  .couple-container {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .couple-info {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .couple-main-photo {
+    max-width: 300px;
+    border: 6px solid white;
+  }
+
+  .couple-name {
+    font-size: 1.6rem;
+  }
+
+  .couple-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .couple-info {
+    max-width: 280px;
+    margin-bottom: 1.5rem;
+  }
+
+  .couple-quote {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .couple-main-photo {
+    max-width: 250px;
+    border: 5px solid white;
+  }
+
+  .couple-name {
+    font-size: 1.4rem;
+  }
+
+  .couple-info {
+    max-width: 250px;
+  }
+}
+
+/* Section 3: Acara */
+.event-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.event-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}
+
+.event-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.event-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.event-details {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-btn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Section 4: Peta */
+.map-section {
+  background: linear-gradient(rgba(249, 247, 242, 0.9), rgba(249, 247, 242, 0.9)), url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.map-container {
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Section 5: Love Story */
+.story-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Section 6: Galeri */
+/* Section 6: Galeri - PERBAIKAN */
+.gallery-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.0.3&auto=format&fit=crop&w=2086&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.gallery-section .section-title {
+  color: white;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 250px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+/* Modal Galeri */
+.gallery-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.modal-img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-nav:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.modal-prev {
+  left: 20px;
+}
+
+.modal-next {
+  right: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Section 7: Gift */
+.gift-section {
+  background: linear-gradient(rgba(249, 247, 242, 0.9), rgba(249, 247, 242, 0.9)), url("https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.gift-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gift-card:hover {
+  transform: translateY(-10px);
+}
+
+.gift-icon {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.qris-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.qris-img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Section 8: RSVP */
+.rsvp-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.emoji-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.emoji-btn {
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.emoji-btn:hover {
+  transform: scale(1.2);
+}
+
+.comment-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.comment-list {
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.comment-item {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Section 9: Thank You */
+.thankyou-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.thankyou-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.couple-initials {
+  font-size: 10rem;
+  font-family: "Dancing Script", cursive;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.thankyou-message {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Modal Galeri */
+.gallery-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-nav:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.modal-prev {
+  left: 20px;
+}
+
+.modal-next {
+  right: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .couple-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+
+  .gate-container {
+    width: 250px;
+    height: 350px;
+  }
+
+  .countdown-item {
+    min-width: 80px;
+  }
+}
