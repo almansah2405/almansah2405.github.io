@@ -3,357 +3,513 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Undangan Balikan - Dani & Afni ❤️</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v4-shims.min.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/style.css" />
+    <title data-lang-key="pageTitle">Dani Almansah - Portofolio</title>
+    <meta name="description" content="Professional portfolio of Dani Almansah, showcasing skills and projects" />
+    <link rel="icon" type="image/jpg" href="images/icon1.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/solid.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
   </head>
   <body>
-    <body>
-  <!-- Navbar -->
- <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
-  <div class="container">
-    <a class="navbar-brand" href="#hero">
-      <span class="brand-text text-stroke">Dani & Afni</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <i class="fas fa-bars custom-toggler-icon"></i> 
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link text-stroke" href="#hero">Beranda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-stroke" href="#quran">Ayat Quran</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-stroke" href="#couple">Pasangan</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link text-stroke" href="#events">Acara</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link text-stroke" href="#story">Love Story</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-stroke" href="#gallery">Galeri</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-stroke" href="#rsvp">RSVP</a>
-        </li>
-      </ul>
+    <div class="preloader">
+      <div class="loader"></div>
+      <div class="text">Wait...</div>
     </div>
-  </div>
-</nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section" id="hero">
-      <h1 class="hero-title">Dani & Afni</h1>
-      <p class="hero-subtitle">“Aku pernah kehilanganmu karena aku belum jadi versi terbaik dari diriku. Sekarang aku kembali bukan untuk meminta masa lalu, tetapi menawarkan masa depan yang lebih jujur dan matang. Jika hatimu masih menyimpan ruang kecil untukku, aku siap memperbaiki yang dulu pernah kita jatuhkan.”</p>
-      <p class="hero-subtitle"><strong>Ayok lah Balikan Afni 🥹</strong></p>
-      <div class="countdown" id="countdown">
-        <div class="countdown-item">
-          <span class="countdown-number" id="days">00</span>
-          <span class="countdown-label">Hari</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-number" id="hours">00</span>
-          <span class="countdown-label">Jam</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-number" id="minutes">00</span>
-          <span class="countdown-label">Menit</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-number" id="seconds">00</span>
-          <span class="countdown-label">Detik</span>
+    <nav id="navbar">
+      <div class="container">
+        <a href="#home" class="logo">Dani<span> Almansah</span></a>
+        <ul class="nav-links">
+          <li><a href="#home" class="active" data-lang-key="navHome">Home</a></li>
+          <li><a href="#about" data-lang-key="navAbout">About</a></li>
+          <li><a href="#skills" data-lang-key="navSkills">Skills</a></li>
+          <li><a href="#portfolio" data-lang-key="navPortfolio">Portfolio</a></li>
+          <li><a href="#experience" data-lang-key="navExperience">Experience</a></li>
+          <li><a href="#hobbies" data-lang-key="navGallery">Gallery</a></li>
+          <li><a href="#contact" data-lang-key="navContact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="language-switcher">
+            <select id="language-select">
+              <option value="id">ID</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
       </div>
-    
-      <!-- Audio untuk wedding -->
-      <audio id="weddingAudio" loop preload="auto">
-        <source src="assets/images/lagu_prewed.mp3" type="audio/mpeg" />
-      </audio>
+    </nav>
+
+    <section id="home" class="profile-section">
+      <div class="container">
+        <div class="profile-header">
+          <div class="cover-photo-container">
+            <img src="images/dani.jpg" alt="Cover Photo" class="cover-photo" />
+          </div>
+          <div class="profile-info-container">
+            <div class="profile-picture">
+              <img src="images/exp.jpg" alt="Dani Almansah" class="profile-img-circle" />
+            </div>
+            <div class="profile-details">
+              <h1 class="profile-name">Dani Almansah</h1>
+              <p class="profile-bio" data-lang-key="profileBio">Junior Web Developer & Designer Grapich</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/dani-almansah-8a182736a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/almansah2405" target="_blank" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/6282360143561" target="_blank" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/daniialmnsh_?igsh=eWtwMzU5YWQ4NXdv" target="_blank" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary" data-lang-key="hireMeBtn">Hire Me</a>
+                <a href="assets/DANI ALMANSAH.pdf" download class="btn btn-secondary" data-lang-key="downloadCvBtn">Download CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Konten Undangan (Awalnya Tersembunyi) -->
-    <div class="invitation-content" id="invitationContent">
-      <!-- Section 1: Ayat Quran -->
-      <section class="section quran-section" id="quran">
-        <div class="container">
-          <h2 class="section-title">Firman Allah</h2>
-          <div class="quran-text">
-            <div class="arabic-text">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</div>
-            <p>
-              "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang
-              demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir."
-            </p>
-            <p class="mt-3"><strong>(QS. Ar-Rum: 21)</strong></p>
+    <div class="content-wrapper">
+      <section id="about" class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <h2 class="section-title" data-lang-key="aboutTitle">Tentang <span>Saya</span></h2>
           </div>
-        </div>
-      </section>
-
-      <!-- Section 2: Pasangan Pengantin -->
-      <section class="section couple-section" id="couple">
-        <div class="container">
-          <h2 class="section-title">Pasangan Pengantin</h2>
-          
-          <!-- Foto utama pengantin - RESPONSIVE -->
-          <div class="couple-main-photo-container">
-            <img 
-              src="assets/images/0.jpg" 
-              alt="Dani & Nurafni" 
-              class="couple-main-photo"
-            />
-          </div>
-          
-          <div class="couple-container">
-            <div class="couple-info">
-              <h3 class="couple-name">Dani Almansah, S.Kom</h3>
-              <p class="couple-parents">Putra dari Keluarga Bapak Darsono</p>
-              <p class="couple-quote">"Cinta bukanlah bagaimana kita melupakan kekurangan, tetapi bagaimana kita menerima kekurangan itu dengan lapang dada."</p>
-            </div>
-            <div class="couple-info">
-              <h3 class="couple-name">Nurafni, S.Pd</h3>
-              <p class="couple-parents">Putri dari Keluarga Bapak Samsudin</p>
-              <p class="couple-quote">"Cinta sejati bukan tentang menemukan seseorang yang sempurna, tetapi melihat seseorang yang tidak sempurna dengan cara yang sempurna."</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 3: Acara -->
-      <!-- <section class="section event-section" id="events">
-        <div class="container">
-          <h2 class="section-title">Acara Pernikahan</h2>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="event-card">
-                <div class="event-icon">
-                  <i class="fas fa-mosque"></i>
+          <div class="about-content">
+            <div class="about-text">
+              <p data-lang-key="aboutDescription">
+                Saya lulusan Sarjana Sistem Informasi dengan IPK 3,41 dari Universitas Islam Negeri Sumatera Utara. Saya berpengalaman dalam desain grafis dan pengembangan web, dengan kemampuan menciptakan desain yang menarik dan fungsional serta
+                mengembangkan aplikasi web yang responsif dan ramah pengguna.
+              </p>
+              <div class="tabs-container">
+                <div class="tabs">
+                  <button class="tab-btn active" data-tab="skills" data-lang-key="mainSkillsTab">Skill Utama</button>
+                  <button class="tab-btn" data-tab="education" data-lang-key="educationTab">Pendidikan</button>
+                  <button class="tab-btn" data-tab="language" data-lang-key="languageTab">Penguasaan Bahasa</button>
                 </div>
-                <h3 class="event-title">Akad Nikah</h3>
-                <p class="event-details">
-                  <strong>Sabtu, 15 Mei 2023</strong><br />
-                  Pukul 08:00 - 10:00 WIB<br />
-                  Masjid Al-Ikhlas<br />
-                  Jl. Merdeka No. 123, Any City
-                </p>
-                <button class="btn calendar-btn" onclick="addToCalendar('Akad Nikah Donna & Harper', '2023-05-15T08:00:00', 'Masjid Al-Ikhlas, Jl. Merdeka No. 123, Any City')"><i class="fas fa-calendar-plus me-2"></i>Simpan di Kalender</button>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="event-card">
-                <div class="event-icon">
-                  <i class="fas fa-glass-cheers"></i>
+                <div class="tab-content-wrapper">
+                  <div class="tab-content active" id="skills-tab">
+                    <div class="skills-list">
+                      <div class="skill-item" data-percent="60%">
+                        <span data-lang-key="skillWebDev">Web Development</span>
+                        <div class="progress-bar"><div class="progress-fill"></div></div>
+                      </div>
+                      <div class="skill-item" data-percent="85%">
+                        <span data-lang-key="skillGraphicDesign">Graphic Design</span>
+                        <div class="progress-bar"><div class="progress-fill"></div></div>
+                      </div>
+                      <div class="skill-item" data-percent="90%">
+                        <span data-lang-key="skillOffice">Microsoft Office</span>
+                        <div class="progress-bar"><div class="progress-fill"></div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content" id="education-tab">
+                    <div class="education-list">
+                      <div class="education-item">
+                        <h4 data-lang-key="eduDegree">Lulusan Sistem Informasi</h4>
+                        <p data-lang-key="eduUniversity">Universitas Islam Negeri Sumatera Utara, Sep 2020 - Feb 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content" id="language-tab">
+                    <div class="language-list">
+                      <div class="language-item" data-percent="100%">
+                        <span data-lang-key="langIndonesian">Indonesia</span>
+                        <div class="progress-bar"><div class="progress-fill"></div></div>
+                      </div>
+                      <div class="language-item" data-percent="70%">
+                        <span data-lang-key="langEnglish">Inggris</span>
+                        <div class="progress-bar"><div class="progress-fill"></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 class="event-title">Resepsi Pernikahan</h3>
-                <p class="event-details">
-                  <strong>Sabtu, 15 Mei 2023</strong><br />
-                  Pukul 17:00 - 21:00 WIB<br />
-                  Grand Ballroom Hotel Serasi<br />
-                  Jl. Gatot Subroto No. 456, Any City
-                </p>
-                <button class="btn calendar-btn" onclick="addToCalendar('Resepsi Pernikahan Donna & Harper', '2023-05-15T17:00:00', 'Grand Ballroom Hotel Serasi, Jl. Gatot Subroto No. 456, Any City')">
-                  <i class="fas fa-calendar-plus me-2"></i>Simpan di Kalender
-                </button>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- Section 4: Peta -->
-      <!-- <section class="section map-section" id="map">
-        <div class="container">
-          <h2 class="section-title">Lokasi Resepsi</h2>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613506864!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1620047354254!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy">
-            </iframe>
+      <section id="skills" class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <h2 class="section-title" data-lang-key="mySkillsTitle">Skill <span>Saya</span></h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Icon" width="40" />
+              </div>
+              <h3>PHP</h3>
+              <p data-lang-key="phpDesc">Server-side scripting and backend development</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop Icon" width="40" />
+              </div>
+              <h3>Photoshop</h3>
+              <p data-lang-key="photoshopDesc">Photo editing</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://img.icons8.com/color/48/000000/canva.png" alt="Canva Icon" width="40" />
+              </div>
+              <h3>Canva</h3>
+              <p data-lang-key="canvaDesc">Design for social media and branding</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://img.icons8.com/color/48/000000/coreldraw.png" alt="CorelDRAW Icon" width="40" />
+              </div>
+              <h3>CorelDRAW</h3>
+              <p data-lang-key="coreldrawDesc">Vector illustration and print design</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://img.icons8.com/color/48/000000/microsoft-office-2019.png" alt="Microsoft Office Icon" width="40" />
+              </div>
+              <h3>Microsoft Office</h3>
+              <p data-lang-key="officeDesc">Word, Excel, PowerPoint for productivity</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap Icon" width="40" />
+              </div>
+              <h3>Bootstrap</h3>
+              <p data-lang-key="bootstrapDesc">Responsive web design framework</p>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- Section 5: Love Story -->
-      <section class="section story-section" id="story">
-        <div class="container">
-          <h2 class="section-title">Love Story</h2>
+      <section id="portfolio" class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <h2 class="section-title" data-lang-key="portfolioTitle">Portofolio <span>Saya</span></h2>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-item" data-title-id="project1Title" data-image="images/Screenshot (14).png" data-desc-id="project1Desc">
+              <img src="images/Screenshot (14).png" alt="Project 1" />
+              <div class="overlay">
+                <button class="btn btn-secondary view-btn" data-lang-key="viewProjectBtn">Lihat Projek</button>
+              </div>
+            </div>
+            <div class="portfolio-item" data-title-id="project2Title" data-image="images/Screenshot (250).png" data-desc-id="project2Desc">
+              <img src="images/Screenshot (250).png" alt="Project 2" />
+              <div class="overlay">
+                <button class="btn btn-secondary view-btn" data-lang-key="viewProjectBtn">Lihat Projek</button>
+              </div>
+            </div>
+            <div class="portfolio-item" data-title-id="project3Title" data-image="images/canva.png" data-desc-id="project3Desc">
+              <img src="images/canva.png" alt="Project 3" />
+              <div class="overlay">
+                <button class="btn btn-secondary view-btn" data-lang-key="viewProjectBtn">Lihat Projek</button>
+              </div>
+            </div>
+            <div class="portfolio-item" data-title-id="project4Title" data-image="images/Gambar WhatsApp 2025-07-25 pukul 22.55.32_7b5b796b.jpg" data-desc-id="project4Desc">
+              <img src="images/Gambar WhatsApp 2025-07-25 pukul 22.55.32_7b5b796b.jpg" alt="Project 4" />
+              <div class="overlay">
+                <button class="btn btn-secondary view-btn" data-lang-key="viewProjectBtn">Lihat Projek</button>
+              </div>
+            </div>
+            <div class="portfolio-item" data-title-id="project5Title" data-image="images/Screenshot (329).png" data-desc-id="project5Desc">
+              <img src="images/Screenshot (329).png" alt="Project 5" />
+              <div class="overlay">
+                <button class="btn btn-secondary view-btn" data-lang-key="viewProjectBtn">Lihat Projek</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="portfolioModal" class="modal">
+          <div class="modal-content">
+            <span class="close">×</span>
+            <h3 class="modal-title"></h3>
+            <img class="modal-image" src="" alt="" />
+            <p class="modal-desc"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <h2 class="section-title" data-lang-key="experienceTitle">Pengalaman <span>Kerja</span></h2>
+          </div>
           <div class="timeline">
             <div class="timeline-item">
+              <div class="timeline-date" data-lang-key="exp1Date"><strong>Jul 2020 – Agu 2025</strong></div>
               <div class="timeline-content">
-                <h4 class="timeline-date">2017</h4>
-                <h5>Pertemuan Pertama</h5>
-                <p>Kami pertama kali bertemu di sekolah SMA Negeri Sei Balai, pada saat itu kami belum saling suka dan belum berhubungan</p>
+                <h4 data-lang-key="exp1Company">CV. Mitra Utama Printing/Smart Print - Medan</h4>
+                <p>
+                  <em data-lang-key="exp1Position"><strong>Posisi: Operator Komputer & Desain Grafis</strong></em>
+                </p>
+                <p data-lang-key="exp1Desc1">• Mendesain spanduk promosi untuk TK Hanayovalin dengan konsep ramah anak, menggunakan warna cerah, ilustrasi lucu, dan tipografi yang mudah dibaca.</p>
+                <p data-lang-key="exp1Desc2">• Mendesain cover buku TOCFL HSK untuk Mandarin Books Group.</p>
+                <p data-lang-key="exp1Desc3">• Mendesain spanduk qurban untuk masjid Al – Hidayah Medan dengan konsep Islami.</p>
+                <p data-lang-key="exp1Desc4">• Mendesain brosur lamaran kerja untuk PT. Solid Indo Grub dengan konsep ceria dan simpel.</p>
+                <p data-lang-key="exp1Desc5">• Mendesain cover buku skripsi untuk STIE Eka Prasetya Medan dengan konsep yang sesuai pada prosedur instansi pendidikan.</p>
+                <p data-lang-key="exp1Desc6">• Menggunakan perangkat lunak Microsoft Office (Word, Excel) untuk meningkatkan operasinal perusahaan.</p>
+                <p>
+                  <em data-lang-key="exp1ToolsDesignTitle"><strong>Tools Desain:</strong></em>
+                </p>
+                <p data-lang-key="exp1ToolsDesignDesc">Menggunakan perangkat lunak desain grafis seperti Canva, Photoshop, dan CorelDraw untuk menciptakan desain yang berkualitas tinggi.</p>
+                <p>
+                  <em data-lang-key="exp1OfficeToolsTitle"><strong>Office Tools:</strong></em>
+                </p>
+                <p data-lang-key="exp1OfficeToolsDesc">
+                  Menggunakan perangkat lunak Microsoft Office (Word, Excel) untuk meningkatkan operasinal perusahaan dan memberikan layanan cepat dalam memenuhi permintaan pelanggan dengan tingkat kepuasan yang tinggi.
+                </p>
               </div>
             </div>
+            <br />
+            <br />
             <div class="timeline-item">
+              <div class="timeline-date" data-lang-key="exp2Date"><strong>Okt 2023 - Nov 2023</strong></div>
               <div class="timeline-content">
-                <h4 class="timeline-date"> 2018</h4>
-                <h5>Mulai Berkomunikasi</h5>
-                <p>Setelah beberapa beberapa bulan saling berkomunikasi karena kami satu kelas, akhirnya kami mulai sering berkmounikasi dan juga pertama kali aku ngajak Afni keluar ke bazar.</p>
+                <h4 data-lang-key="exp2Company">Kementerian PUPR – Balai Wilayah Sungai Sumatera II (Magang)</h4>
+                <p>
+                  <em data-lang-key="exp2Position"><strong>Posisi: Staff Administrasi SNVT PJSA</strong></em>
+                </p>
+                <p data-lang-key="exp2Desc1">
+                  • Melakukan penyusunan dan pembuatan surat perjalanan dinas untuk kegiatan operasional internal, termasuk koordinasi dengan pihak-pihak terkait guna memastikan keakuratan data dan kelengkapan administrasi surat.
+                </p>
+                <p data-lang-key="exp2Desc2">
+                  • Melaksanakan tugas pengarsipan surat masuk dan keluar dengan sistematis dan rapi, serta menyusun laporan pengarsipan secara berkala untuk mendukung kelancaran administrasi di lingkungan SNVT PJSA (Satuan Non Vertikal Tertentu
+                  Pengelolaan Jaringan Sumber Air).
+                </p>
+                <p data-lang-key="exp2Desc3">• Meningkatkan pemahaman terhadap struktur birokrasi pemerintahan dan praktik administrasi di instansi teknis bidang pekerjaan umum dan sumber daya air.</p>
+                <p data-lang-key="exp2Desc4">• Merancang dan membangun Sistem Informasi Pengarsipan Surat divisi SNVT PJSA untuk penyimpanan data agar lebih tertata rapi dan mengurangi potensi kerusakan data.</p>
+                <p>
+                  <em data-lang-key="exp2ResponsibilitiesTitle"><strong>Tugas dan Tanggung Jawab:</strong></em>
+                </p>
+                <p data-lang-key="exp2ResponsibilitiesDesc">
+                  Melaksanakan tugas dan tanggung jawab pengarsipan surat masuk dan keluar dengan sistematis dan rapi, serta menyusun laporan pengarsipan secara berkala untuk mendukung kelancaran administrasi di lingkungan SNVT PJSA (Satuan Non
+                  Vertikal Tertentu Pengelolaan Jaringan Sumber Air).
+                </p>
+                <p>
+                  <em data-lang-key="exp2GoalsTitle"><strong>Tujuan Magang:</strong></em>
+                </p>
+                <p data-lang-key="exp2GoalsDesc">Meningkatkan pemahaman terhadap struktur birokrasi pemerintahan dan praktik administrasi di instansi teknis bidang pekerjaan umum dan sumber daya air.</p>
               </div>
             </div>
+            <br />
+            <br />
             <div class="timeline-item">
+              <div class="timeline-date" data-lang-key="exp3Date"><strong>Futured</strong></div>
               <div class="timeline-content">
-                <h4 class="timeline-date">2020</h4>
-                <h5>Menyatakan Perasaan</h5>
-                <p>Sekian lama ia memendam rasa pada akhirnya dia memberanikan diri untuk menyatakan perasaannya, namun respon ku masih saja tetap sama dan menganggap afni adalah teman sekelas dulu.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h4 class="timeline-date">2022</h4>
-                <h5>Aku Memilihnya</h5>
-                <p>Sekian lama kami berkomunikasi mulai dari chatingan dan teleponan serta video call, akhirnya aku memutuskan untuk memilihnya. Karena juga setelah mengetahui ia telah putus dengan mantan pacarnya.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h4 class="timeline-date">Future</h4>
-                <h5>Pernikahan</h5>
-                <p>Sekitar 3 menjelang 4 tahun kami berhubungan dan kami pun sudah memikirkan hubungan yang serius yaitu Pernikahan, ada suatu insiden kamu putus. Aku harap hubungan ini bisa melanjutkan kembali hingga impian dan keinginan kami terwujud semuanya</p>
+                <h4 data-lang-key="exp3Company">Futured</h4>
+                <p>
+                  <em data-lang-key="exp3Position"><strong>-</strong></em>
+                </p>
+                <p>-</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Section 6: Galeri -->
-      <section class="section gallery-section" id="gallery">
-        <div class="container">
-          <h2 class="section-title">Galeri Kenangan</h2>
-          <div class="gallery-container" id="galleryContainer">
-            <!-- Gambar galeri akan dimuat di sini oleh JavaScript -->
+      <section id="hobbies" class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <h2 class="section-title" data-lang-key="galleryTitle">Galeri <span>Saya</span></h2>
+          </div>
+          <div class="hobbies-grid">
+            <div class="hobby-card">
+              <img src="images/s.jpg" alt="touring hobby" />
+              <div class="hobby-overlay">
+                <h3 data-lang-key="hobbyTouring">Touring</h3>
+              </div>
+            </div>
+            <div class="hobby-card">
+              <img src="images/c.jpg" alt="Camping hobby" />
+              <div class="hobby-overlay">
+                <h3 data-lang-key="hobbyCamping">Camping</h3>
+              </div>
+            </div>
+            <div class="hobby-card">
+              <img src="images/siu.jpg" alt="Touring Hobby" />
+              <div class="hobby-overlay">
+                <h3 data-lang-key="hobbyTouring">Touring</h3>
+              </div>
+            </div>
+            <div class="hobby-card">
+              <img src="images/km0.jpg" alt="Touring Hobby" />
+              <div class="hobby-overlay">
+                <h3 data-lang-key="hobbyTouring">Touring</h3>
+              </div>
+            </div>
+            <div class="hobby-card">
+              <img src="images/Gambar WhatsApp 2025-06-12 pukul 22.54.50_40ef1d5c.jpg" alt="Touring Hobby" />
+              <div class="hobby-overlay">
+                <h3 data-lang-key="hobbyTouring">Touring</h3>
+              </div>
+            </div>
+            <div class="hobby-card">
+              <img src="images/p.jpg" alt="Touring Hobby" />
+              <div class="hobby-overlay">
+                <h3 data-lang-key="hobbyTouring">Touring</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Modal Galeri -->
-      <div class="gallery-modal" id="galleryModal">
-        <button class="modal-close" id="modalClose">&times;</button>
-        <button class="modal-nav modal-prev" id="modalPrev">&lsaquo;</button>
-        <button class="modal-nav modal-next" id="modalNext">&rsaquo;</button>
-        <div class="modal-content">
-          <img class="modal-img" id="modalImg" src="" alt="" />
-        </div>
-      </div>
-
-      <!-- Section 7: Gift -->
-      <section class="section gift-section" id="gift">
-        <div class="container">
-          <h2 class="section-title">Kirim Hadiah</h2>
-          <p class="text-center mb-5">Kehadiran dan doa Anda sudah merupakan hadiah yang tak ternilai bagi kami. Namun jika Anda ingin memberikan tanda kasih, kami dengan senang hati menerimanya.</p>
-          <div class="gift-card" id="giftCard">
-            <div class="gift-icon">
-              <i class="fas fa-gift"></i>
+      <section id="contact" class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <h2 class="section-title" data-lang-key="contactTitle">Kontak <span>Saya</span></h2>
+            <p class="section-subtitle" data-lang-key="contactSubtitle">Silahkan Klik</p>
+          </div>
+          <div class="contact-container">
+            <div class="contact-info">
+              <h3 data-lang-key="contactTalk">Mari bicarakan proyek Anda</h3>
+              <p data-lang-key="contactFeelFree">Jangan ragu untuk menghubungi saya.</p>
+              <div class="info-item clickable" onclick="window.location.href='mailto:dani.almansah@gmail.com'">
+                <div class="info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <h4 data-lang-key="emailLabel">Email</h4>
+                  <p>dani.almansah24@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item clickable" onclick="window.location.href='tel:+6282360143561'">
+                <div class="info-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="info-content">
+                  <h4 data-lang-key="phoneLabel">Phone</h4>
+                  <p>+62 823-6014-3561</p>
+                </div>
+              </div>
+              <div class="info-item clickable" onclick="window.open('https://maps.app.goo.gl/GLLp6UUKwrn4C7Fa8','_blank')">
+                <div class="info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-content">
+                  <h4 data-lang-key="locationLabel">Location</h4>
+                  <p data-lang-key="locationDesc">Batu Bara, Sumatera Utara, Indonesia</p>
+                </div>
+              </div>
             </div>
-            <h3>Klik Kartu Ini</h3>
-            <p>Untuk informasi lebih lanjut tentang pemberian KEJUTAN!!!</p>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required data-lang-placeholder-key="yourNamePlaceholder" />
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email" required data-lang-placeholder-key="yourEmailPlaceholder" />
+              </div>
+              <div class="form-group">
+                <input type="text" id="subject" placeholder="Subject" data-lang-placeholder-key="subjectPlaceholder" />
+              </div>
+              <div class="form-group">
+                <textarea id="message" rows="5" placeholder="Your Message" required data-lang-placeholder-key="yourMessagePlaceholder"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" data-lang-key="sendBtn">Kirim</button>
+            </form>
           </div>
         </div>
       </section>
-
-      <!-- Modal QRIS -->
-      <div class="qris-modal" id="qrisModal">
-        <div class="text-center">
-          <img src="assets/images/gif.gif" alt="QRIS Donation" class="qris-img" />
-          <p class="text-white mt-3">I LOVE YOU AFNI. BALIKAN YUK ❤️🫰</p>
-          <button class="btn btn-light mt-3" id="closeQris">Tutup</button>
-        </div>
-      </div>
-
-      <!-- Section 8: RSVP -->
-      <section class="section rsvp-section" id="rsvp">
-        <div class="container">
-          <h2 class="section-title">Klik Salah Satu Emoji Supaya Balikan 👌</h2>
-          <p class="text-center mb-4">Apakah Anda Bersedia Balikan?</p>
-
-          <div class="emoji-container">
-            <button class="emoji-btn" data-emoji="😭" data-response="Terharu">😭</button>
-            <button class="emoji-btn" data-emoji="😍" data-response="Senang">😍</button>
-            <button class="emoji-btn" data-emoji="🎉" data-response="Semangat">🎉</button>
-            <button class="emoji-btn" data-emoji="🥰" data-response="Bahagia">🥰</button>
-            <button class="emoji-btn" data-emoji="🙏" data-response="Doa">🙏</button>
-          </div>
-
-          <div class="alert alert-success text-center" id="responseAlert" style="display: none; max-width: 600px; margin: 0 auto">Terima kasih atas tanggapan Anda!</div>
-
-          <div class="comment-form mt-5">
-            <h4 class="text-center mb-4">Tinggalkan Ucapan & Doa</h4>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="commentName" placeholder="Nama Anda" />
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" id="commentMessage" rows="4" placeholder="Tulis ucapan dan doa untuk kami..."></textarea>
-            </div>
-            <div class="text-center">
-              <button class="btn calendar-btn" id="submitComment">Kirim Ucapan</button>
-            </div>
-          </div>
-
-          <div class="comment-list" id="commentList">
-            <!-- Komentar akan ditampilkan di sini -->
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 9: Thank You -->
-      <section class="section thankyou-section" id="thankyou">
-        <div class="container">
-          <div class="couple-initials">D & A</div>
-          <h1 class="thankyou-title">Terima Kasih</h1>
-          <p class="thankyou-message">
-            “Aku datang bukan untuk mengulang yang lama, tapi untuk memperbaiki yang dulu nggak bisa aku jaga. Kalau kamu sudah bahagia, aku terima. Tapi kalau masih ada ruang sedikit untuk aku, aku mau bicara baik-baik dan gak buru-buru. Keputusan tetap di kamu.”
-          </p>
-          <p class="thankyou-message">
-            <strong>Dani & Afni</strong><br />
-            3 Desember 2025
-          </p>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <!-- <footer class="footer">
-        <div class="container">
-          <p>Undangan Pernikahan Donna & Harper</p>
-          <p>15 Mei 2023 • 123 Any Where St., Any City</p>
-          <p>Detailnya silakan kunjungi website kami</p>
-          <p class="mt-3">
-            <button class="btn btn-outline-light me-2" onclick="toggleMusic()" id="musicToggle"><i class="fas fa-music me-1"></i> Musik: ON</button>
-            <button class="btn btn-outline-light" onclick="scrollToTop()"><i class="fas fa-arrow-up me-1"></i> Kembali ke Atas</button>
-          </p>
-        </div>
-      </footer>
-    </div> -->
-    <!-- wkwkwkwkw harus bisa lah konget -->
-
-    <div id="splashScreen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: flex; justify-content: center; align-items: center; z-index: 99999;">
-      <div style="text-align: center; color: white; padding: 20px;">
-        <h2 style="font-family: 'Dancing Script', cursive; color: #f5e8d0; margin-bottom: 20px;">Undangan Balikan</h2>
-        <p style="margin-bottom: 30px;">Klik untuk memasuki undangan dan mendengarkan musik</p>
-        <button id="enterButton" style="background: #c9a96e; color: white; border: none; padding: 15px 40px; border-radius: 50px; font-size: 1.2rem; cursor: pointer;">
-          Masuk ke Undangan
-        </button>
-      </div>
     </div>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Script Custom -->
-    <script src="assets/script.js"></script>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h3>Dani Almansah</h3>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/dani-almansah-8a182736a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/almansah2405" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://wa.me/6282360143561" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.instagram.com/daniialmnsh_?igsh=eWtwMzU5YWQ4NXdv" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3 data-lang-key="quickLinksTitle">Tautan Cepat</h3>
+            <ul>
+              <li><a href="#home" data-lang-key="navHome">Home</a></li>
+              <li><a href="#about" data-lang-key="navAbout">About</a></li>
+              <li><a href="#portfolio" data-lang-key="navPortfolio">Portfolio</a></li>
+              <li><a href="#hobbies" data-lang-key="navGallery">Gallery</a></li>
+              <li><a href="#contact" data-lang-key="navContact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h3 data-lang-key="newsletterTitle">Buletin</h3>
+            <p data-lang-key="newsletterDesc">Kirim untuk mendapatkan pembaruan dan wawasan</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" data-lang-placeholder-key="yourEmailPlaceholder" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© <span id="year"></span> <span data-lang-key="copyrightText">Copyright by | Dani Almansah</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js" defer></script>
+    <script>
+      document.querySelectorAll(".view-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.closest(".portfolio-item");
+          const modal = document.getElementById("portfolioModal");
+          const modalTitle = modal.querySelector(".modal-title");
+          const modalImage = modal.querySelector(".modal-image");
+          const modalDesc = modal.querySelector(".modal-desc");
+
+          const currentLang = localStorage.getItem("language") || "id";
+
+          modalTitle.textContent = translations[currentLang][item.dataset.titleId];
+          modalImage.src = item.dataset.image;
+          modalImage.alt = translations[currentLang][item.dataset.titleId];
+          modalDesc.textContent = translations[currentLang][item.dataset.descId];
+
+          modal.style.display = "flex";
+        });
+      });
+      document.querySelector("#portfolioModal .close").addEventListener("click", () => {
+        document.getElementById("portfolioModal").style.display = "none";
+      });
+      window.addEventListener("click", (e) => {
+        const modal = document.getElementById("portfolioModal");
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
